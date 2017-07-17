@@ -74,33 +74,7 @@ try:
 except KeyboardInterrupt:
     pass
 
-##    #stop stream
-##    stream.stop_stream()
-##    stream.close()
-##
-##    #stop recording
-##    cam.stop_recording()
-##
-##    #finish pyaudio
-##    audio.terminate()
 
-
-##    lmax_nom = lmax/2**15
-##    rmax_nom = rmax/2**15
-##    x = np.arange(0,int(RATE / CHUNK * RECORD_SECONDS),0.1)
-##    plt.subplot(2,1,1)
-##    plt.plot(x, lmax_nom)
-##    plt.title("LMAX")
-##    plt.xlim(0, int(RATE / CHUNK * RECORD_SECONDS))
-##    plt.ylim(-0.1,1.1)
-##
-##    plt.subplot(2,1,2)
-##    plt.plot(x, rmax_nom)
-##    plt.title("RMAX")
-##    plt.xlim(0, int(RATE / CHUNK * RECORD_SECONDS))
-##    plt.ylim(-0.1,1.1)
-##
-##    plt.tight_layout()
 waveFile = wave.open(WAVE_OUTPUT_FILENAME, 'wb')
 waveFile.setnchannels(CHANNELS)
 waveFile.setsampwidth(audio.get_sample_size(FORMAT))

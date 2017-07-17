@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-#pulse3番からの入力を受ける。一定時間(RECROD_SECONDS)だけ録音し、ファイル名：mono.wavで保存する。
+#pulse2番からの入力を受ける。一定時間(RECROD_SECONDS)だけ録音し、ファイル名：file.wavで保存する。
 import numpy as np
 import pyaudio
 import wave
