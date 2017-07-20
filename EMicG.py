@@ -22,7 +22,8 @@ CHANNELS = 2
 RATE = 44100
 #録音時間
 RECORD_SECONDS = 10
-WAVE_OUTPUT_FILENAME="file.wav"
+
+
  #pyaudio
 audio = pyaudio.PyAudio()
 try:
@@ -65,9 +66,4 @@ finally:
     audio.terminate()
     print("End of Smile captyring!")
                        
-waveFile = wave.open(WAVE_OUTPUT_FILENAME, 'wb')
-waveFile.setnchannels(CHANNELS)
-waveFile.setsampwidth(audio.get_sample_size(FORMAT))
-waveFIle.setframerate(RATE)
-waveFile.writeframes(b''.join(frames))
-waveFile.close()
+
